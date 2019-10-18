@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1366px;
+}
+.padding-side {
+  padding-left: 98px;
+  padding-right: 98px;
+}
+
+
+/* Шапка сайта - header */
+.header {
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.header h1 {
+  margin-top: 150px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+.menu {
+  display: flex;
+}
+.menu-link {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  text-decoration: none;
+  padding: 10px 13px;
+}
+.menu-link:hover {
+  color: #212121;
+  font-weight: 400;
+  border-bottom: 3px solid #212121;
+}
+.menu-link-search:hover {
+  border-bottom: 3px solid #f5f5f5;
+}
+.header h1 {
+  color: #212121;
+  font-size: 62px;
+  font-weight: 300;
+}
+@media (max-width: 990px) {
+  .padding-side {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header {
+    text-align: center;
+  }
+  .header-top {
+    flex-direction: column;
+  }
+  .menu {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+/* end Шапка сайта - header */
+
+
+/* products */
+.products {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.products-menu {
+  display: flex;
+  margin-bottom: 44px;
+}
+.products-menu-item {
+  padding: 18px;
+  color: #6c6c6c;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.products-menu-item:hover {
+  color: #212121;
+  cursor: pointer;
+  background: linear-gradient(#212121, #212121) bottom center no-repeat;
+  background-size: 100% 3px;
+}
+.products-menu-item:hover+.products-menu-item {
+  /* border-bottom: 1px solid #6c6c6c; */
+  background: linear-gradient(#212121, #212121) bottom center no-repeat;
+  background-size: 100% 1px;
+}
+
+.products-photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.products-photo img {
+  margin-bottom: 30px;
+}
+.products-photo img:hover {
+  cursor: pointer;
+}
+.products-photo img:not(:hover) {
+  opacity: 0.7;
+}
+
+.reload {
+  text-align: center;
+}
+.reload-button:hover {
+  transform: rotate(720deg);
+  transition: 3s;
+  cursor: pointer;
+}
+.reload-button:not(:hover) {
+  opacity: 0.5;
+}
+/* end products */
+
+
+/* exclusive-chair */
+.exclusive-chair {
+  display: flex;
+  flex-wrap: wrap;
+}
+.exclusive-chair-left {
+  background: url("img/exclusive-left.jpg");
+  height: 683px;
+  width: 683px;
+}
+.exclusive-chair-right {
+  background: url("img/exclusive-right.jpg");
+  height: 683px;
+  width: 683px;
+}
+
+.exclusive-chair_exclusive {
+  color: #1e88e5;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin-bottom: 15px;
+}
+.exclusive-chair_heading {
+  margin-bottom: 23px;
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+}
+.exclusive-chair_text {
+  margin-top: 220px;
+  margin-left: 50px;
+}
+.exclusive-chair_content {
+  color: #6c6c6c;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  line-height: 24px;
+  width: 382px;
+}
+
+.button {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  padding: 16px 30px;
+  display: inline-block;
+  text-decoration: none;
+
+  box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+  border-radius: 23px;
+  background-color: #ffffff;
+}
+.button:hover {
+  color: #6c6c6c;
+}
+.button:active {
+  box-shadow: none;
+}
+/* end exclusive */
+
+
+/* footer - Подвал */
+.footer {
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-up-all {
+  margin-bottom: 40px;
+}
+.footer-contact {
+  max-width: 225px;
+}
+
+.footer-heading {
+  color: #6c6c6c;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-info-list {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.footer-info-list:nth-child(2) {
+  margin-right: 100px;
+}
+
+.footer-info-item {
+  margin-bottom: 11px;
+}
+
+.footer-info-text {
+  text-decoration: none;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.footer-info-text:hover {
+  color: #6c6c6c;
+}
+
+.footer-subscribe {
+  max-width: 370px;
+}
+
+.footer-form {
+  position: relative;
+}
+
+.footer-form_email {
+  height: 48px;
+  width: 100%;
+  padding-left: 19px;
+  color: #6c6c6c;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #d9dee1;
+}
+
+.footer-form input[type="image"] {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.footer-form input[type="image"]:not(:hover) {
+  opacity: 0.3;
+}
+
+.footer-down {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #6c6c6c;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.footer-down a {
+  color: #6c6c6c;
+}
+
+.footer-down a:hover {
+  color: #212121;
+}
+
+
+
+
+
+/* Страница продукта - product-details.html */
+.header-product-details {
+  margin-top: 60px;
+}
+.details-menu-wrap {
+  max-width: 647px;
+  margin: 0 auto;
+  
+}
+.details-menu {
+  display: flex;
+  justify-content: space-between;
+
+}
+.details-menu-item {
+  color: #6c6c6c;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.details-menu-item:hover {
+  color: #212121;
+  cursor: pointer;
+}
+.details-menu-bg {
+  background-color: #f4f4f4;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: 60px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.product-images {
+  width: 50%;
+  min-width: 570px;
+}
+.product-images-small {
+  text-align: center;
+  margin-top: 7px;
+}
+.product-images-small img {
+  margin-right: 7px;
+}
+.product-images-small img:last-child {
+  margin-right: 0;
+}
+.product-images-small img:not(:hover) {
+  opacity: 0.5;
+}
+.product-images-small img:hover {
+  cursor: pointer;
+}
+.product-block2 {
+  width: 50%;
+  min-width: 458px;
+  display: flex;
+  justify-content: center;
+}
+.product-desc {
+  text-align: center;
+  margin-top: 44px;
+  min-width: 340px;
+  max-width: 458px;
+}
+.product-desc h3 {
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.product-desc_hot {
+  color: #e53935;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin-bottom: 30px;
+}
+.product-desc_price {
+  color: #212121;
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.product-desc_button {
+  background-color: #f44336;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: 4.4px;
+  border-radius: 35px;
+  padding: 23px 0;
+}
+.product-desc p {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+/* end product */
+
+
+/* related */
+.products-related {
+  margin-bottom: 100px;
+}
+.related-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.related-heading {
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+}
+.related-explore {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+.related-explore:hover {
+  color: #6c6c6c;
+}
+.related-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.related-img img{
+  margin-bottom: 10px;
+}
+.related-img img:hover {
+  cursor: pointer;
+}
+.related-img img:not(:hover) {
+  opacity: 0.7;
+}
+/* end related */
